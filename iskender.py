@@ -1,0 +1,11 @@
+def ogurets(arr):
+    return 'AIT RESULT', max(arr), min(arr), sum(arr)
+
+def pomidor(arr):
+    return len(arr)
+
+
+emil = 'AIT'
+
+
+
