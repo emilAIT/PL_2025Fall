@@ -7,5 +7,6 @@ def pomidor(arr):
 
 emil = 'AIT'
 
-
+def mysum2(a):
+    return a ** 0.5
 

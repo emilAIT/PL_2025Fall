@@ -3,3 +3,7 @@ def iskender(a, b, c = 100):
 
 def meerim(a):
     return 'meerim' * a
+
+
+def mysum1(a):
+    return a ** 2

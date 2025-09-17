@@ -5,12 +5,13 @@ arr = [9,2, 0, 1, 5, 7]
 print('result = ', ogurets(arr))
 print('pomidor = ', pomidor(arr))
 
-import iskender
+import iskender as isken1
+import iskender as isken2
 
-print('ait.ogurets = ', iskender.ogurets(arr))
-print('ait.pomidor = ', iskender.pomidor(arr))
+print('ait.ogurets = ', isken1.ogurets(arr))
+print('ait.pomidor = ', isken2.pomidor(arr))
 
-print('parameter = ', iskender.emil)
+print('parameter = ', isken1.emil)
 
 
 import altinay
@@ -24,3 +25,4 @@ from altinay import *
 print('importing from altinay all function')
 print(iskender(10, 5))
 print(meerim(10))
+
