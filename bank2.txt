@@ -1,0 +1,6 @@
+id,referral,holder,balance,currency
+c01,,emil,200,usd
+c02,,altinay,10000,som
+x03,c01,iskender,6000,usd
+x05,x03,zaarylkan,1000,euro
+z01,x05,kutman,10000,kzt

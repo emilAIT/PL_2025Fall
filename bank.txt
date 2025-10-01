@@ -1,0 +1,3 @@
+id,referral,holder,balance,currency
+c01,,emil,1200,usd
+c02,,altinay,10
