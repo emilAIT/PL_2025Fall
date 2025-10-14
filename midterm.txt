@@ -1,0 +1,64 @@
+[5] count_above_threshold(numbers: list[int], threshold:int) -> int
+ Напишите функцию, которая считает, сколько чисел в массиве больше threshold.
+
+
+[5] letter_grade(avg: int) -> str
+Реализуйте маппинг: A (90+), B (80–89), C (70–79), иначе — "Failed".
+
+
+[5] max_value_and_index(arr: list[int]) -> (int,int)
+ Верните максимум значение и индекс этого значение в массива.
+
+
+[5] Дан список arr = [2, 3, 4, 5, 3, 6, 3]. Удалите все тройки из arr (в результате трёх не должно остаться). 
+
+
+[3] Дан arr = [4, 2, 1, 6, 8, 9, 10]. Что выведет срез для: arr[-3:] (Напишите результат.)
+
+
+[3] Определите результат: 
+[2, 0, 1, 4] < [3, 0] — True или False? Обоснуйте в 1–2 фразах.
+
+
+[3] Что выведет следующий код?
+a = [2, 4, 6]
+b = a
+a = a + [8]
+print(a)
+print(b)
+
+
+[3] Оцените выражение (укажите True/False)
+ (False or True) and (True and False) and (True or False and False)
+
+
+[3] Что выведет следующий код?
+a = [1, 2, 3, 5]
+a.insert(1, 10)
+print(a)
+[5] Подсчёт слов в файле
+Напишите функцию file_word_count(path: str, word: str) -> inт, которая возвращает число сколько раз word в файле повторяется. 
+
+
+[15] longest_word_in_file(filename: str, target_word: str) -> int
+ Напишите функцию, которая по текстовому файлу находит самое длинное слово 
+__________________________________________________________________________________________________________
+Пример CSV:
+	Name,grade,age
+	Alice,85,20
+	Bob,92,22
+	Charlie,78,21
+[15] max_row(filename: str, column_name: str) -> dict | None
+Прочитать CSV и найти всю строку, где значение в столбце column_name максимально. 
+Пример: max_row(‘grades.csv’, ‘age’) должен вернуть ‘Bob,92,22’ так как 22 самый большой.  
+
+
+[15] calculate_column_average(filename: str, column_name: str) -> float
+Прочитать CSV, посчитать среднее значение по столбцу column_name. 
+Пример: calculate_column_average(‘grades.csv’, ‘grade’)  должен вернуть 85 = (85+92+78)/3
+
+
+[15] unique_count(filename: str, column_name: str) -> int
+которая читает CSV-файл и возвращает количество уникальных значений в столбце column_name.
+
+

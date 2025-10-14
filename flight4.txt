@@ -1,0 +1,12 @@
+klass,seat_id,occupied,passenger
+First,1A,True,Alice Kim
+First,1C,False,
+Business,5A,True,B. Lee
+Business,5B,False,
+Business,6C,True,
+Economy,12A,False,
+Economy,12B,True,D. Singh
+Economy,13C,False,
+Economy,14A,True,E. Toktogul
+Economy,14B,False,
+Economy,12A,False,
