@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <input id="kto" placeholder="kto">
+        <br>
+        <input id="komu" placeholder="komu">
+        <br>
+        <input id="chto" placeholder="chto">
+        <br>
+        <button onClick="send()">Otpravit</button>
+        <br>
+        <p id="messages"></p>
+
+
+    </body>
+    <script>
+        function send(){
+            var kto = document.getElementById("kto").value
+            var komu = document.getElementById("komu").value
+            var chto = document.getElementById("chto").value
+            var url = "https://ait25.pythonanywhere.com/send?kto=" + kto + "&komu=" + komu + "&chto=" + encodeURIComponent(chto)
+            fetch(url)
+            .then(function (r) {return r.json();})
+            .then(function (r) {document.getElementById("messages").innerHTML = r.otvet})
+        }
+    </script>
+</html>
