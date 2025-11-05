@@ -26,6 +26,8 @@ class Store:
         self.clients = []
         self.item_objects = []
 
+
+
     def add_product(self, item:Item, count):
         self.items[item.shtrihkod] += count
         self.names[item.shtrihkod] = item 
