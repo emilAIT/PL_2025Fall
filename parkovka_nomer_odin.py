@@ -1,7 +1,14 @@
-from PyQt5.QtWidgets import *
+from PyQt5.QtWidgets import QTextEdit,  QApplication, QWidget, QPushButton, QLineEdit, QLabel, QComboBox, QFormLayout, QVBoxLayout
 from PyQt5.QtGui import QFont
 from parking import Parking
-import sys
+
+class AitButton(QPushButton):
+    def __init__(self):
+        super().__init__()
+        font = QFont()
+        font.setPointSize(18)
+        self.setFont(font)
+
 
 class AitInfo(QWidget):
     def __init__(self, d, title=''):
@@ -22,7 +29,7 @@ class AitInfo(QWidget):
         self.combo.addItems(['Emil', 'AIt', 'Salam', 'Aleykum'])
         self.combo.setFont(self.font)
         self.form.addWidget(self.combo)
-        
+
         self.knopka = QPushButton('Najmi knopku')
         self.knopka.setFont(self.font)
         self.knopka.clicked.connect(self.knopka_najmi)
@@ -67,10 +74,11 @@ class ParkovkaNomerOdin(QWidget):
         self.setFixedHeight(800)
         self.setFixedWidth(600)
 
-        self.add_balance_button = QPushButton('Add balance')
+        self.add_balance_button = AitButton()
+        self.add_balance_button.setText('Add Balance') #QPushButton('Add balance')
         self.form.addWidget(self.add_balance_button)
         self.add_balance_button.clicked.connect(self.ui_add_balance)
-        self.add_balance_button.setFont(self.font)
+        #self.add_balance_button.setFont(self.font)
 
         self.remove_car_button = QPushButton('Remove car')
         self.form.addWidget(self.remove_car_button)
@@ -154,7 +162,7 @@ class ParkovkaNomerOdin(QWidget):
         self.aitx[-1].show()
 
 if __name__ == "__main__":
-    app = QApplication(sys.argv)
+    app = QApplication([])
     parkovka_app = ParkovkaNomerOdin()
     parkovka_app.show()
     app.exec_()
